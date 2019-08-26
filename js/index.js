@@ -70,14 +70,18 @@ const awesome = document.querySelector("h1");
 awesome.textContent =  siteContent["cta"]["h1"];
 
 // h4 headers
-const topContenth4 = document.querySelectorAll(".main-content h4");
-topContenth4[0].textContent = siteContent["main-content"]["features-h4"];
-topContenth4[1].textContent = siteContent["main-content"]["about-h4"];
-topContenth4[2].textContent = siteContent["main-content"]["services-h4"];
-topContenth4[3].textContent = siteContent["main-content"]["product-h4"];
-topContenth4[4].textContent = siteContent["main-content"]["vision-h4"];
+const textContenth4 = document.querySelectorAll(".main-content h4");
+textContenth4[0].textContent = siteContent["main-content"]["features-h4"];
+textContenth4[1].textContent = siteContent["main-content"]["about-h4"];
+textContenth4[2].textContent = siteContent["main-content"]["services-h4"];
+textContenth4[3].textContent = siteContent["main-content"]["product-h4"];
+textContenth4[4].textContent = siteContent["main-content"]["vision-h4"];
 
-
-
-
+// p Content
+const textContentp = document.querySelectorAll(".main-content p");
+textContentp[0].textContent = siteContent["main-content"]["features-content"];
+textContentp[1].textContent = siteContent["main-content"]["about-content"];
+textContentp[2].textContent = siteContent["main-content"]["services-content"];
+textContentp[3].textContent = siteContent["main-content"]["product-content"];
+textContentp[4].textContent = siteContent["main-content"]["vision-content"];
 
