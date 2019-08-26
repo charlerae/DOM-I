@@ -61,9 +61,23 @@ pageNav[3].textContent = siteContent["nav"]["nav-item-4"];
 pageNav[4].textContent = siteContent["nav"]["nav-item-5"];
 pageNav[5].textContent = siteContent["nav"]["nav-item-6"];
 
-// Text
+// Button
+const callButton = document.querySelector("button");
+callButton.textContent = siteContent["cta"]["button"];
+
+//  Page Text
 const awesome = document.querySelector("h1");
 awesome.textContent =  siteContent["cta"]["h1"];
 
+// h4 headers
+const topContenth4 = document.querySelectorAll(".main-content h4");
+topContenth4[0].textContent = siteContent["main-content"]["features-h4"];
+topContenth4[1].textContent = siteContent["main-content"]["about-h4"];
+topContenth4[2].textContent = siteContent["main-content"]["services-h4"];
+topContenth4[3].textContent = siteContent["main-content"]["product-h4"];
+topContenth4[4].textContent = siteContent["main-content"]["vision-h4"];
 
-// Button
+
+
+
+
