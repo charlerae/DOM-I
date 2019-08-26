@@ -1,4 +1,8 @@
+
+
+
 const siteContent = {
+  
   "nav": {
     "nav-item-1": "Services",
     "nav-item-2": "Product",
@@ -37,6 +41,29 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
+
+// Images
+let logo = document.querySelector("#logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const cta = document.querySelector("#cta-img");
+cta.src = 'img/header-img.png';
+
+const middleImg = document.querySelector("#middle-img");
+middleImg.src = 'img/mid-page-accent.jpg';
+
+// Navigation 
+const pageNav = document.querySelectorAll("nav a");
+pageNav[0].textContent = siteContent["nav"]["nav-item-1"];
+pageNav[1].textContent = siteContent["nav"]["nav-item-2"];
+pageNav[2].textContent = siteContent["nav"]["nav-item-3"];
+pageNav[3].textContent = siteContent["nav"]["nav-item-4"];
+pageNav[4].textContent = siteContent["nav"]["nav-item-5"];
+pageNav[5].textContent = siteContent["nav"]["nav-item-6"];
+
+// Text
+const awesome = document.querySelector("h1");
+awesome.textContent =  siteContent["cta"]["h1"];
+
+
+// Button
